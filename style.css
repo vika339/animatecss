@@ -1,0 +1,336 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.canvas{
+    position: relative;
+    width: 900px;
+    height: 750px;
+    border: 10px solid #2C2AA5;
+    background-image: url(ship_animation/wrld1.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+#ship{
+    position: absolute;
+    width: 150px;
+    bottom: 50px;
+    left: 10px;
+    animation-name: ship1;
+    animation-duration: 20s;
+    
+}
+#water{
+position: absolute;
+    bottom: 0px;
+    width: 890px;
+    margin: 0 auto;
+    animation-name: water1;
+    animation-duration: 20s;
+}
+#comet{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    animation-name: comet1;
+    animation-delay: 6s;
+    animation-duration: 14s;
+}
+#clouds{
+    position: absolute;
+    width: 400px;
+    right: 250px;
+    top: 30px;
+    animation-name: clouds1;
+    animation-duration: 20s;
+}
+#sun{
+    position: absolute;
+    width: 0px;
+    top: 5px;
+    left: 100px;
+    animation-name: sun1;
+    animation-duration: 20s;
+
+}
+@keyframes comet1{
+    0%{
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    }
+    14%{
+    left: 60px;
+    top: 20px;
+    width: 5px;
+    }
+    25%{
+    left: 100px;
+    top: 30px;
+    width: 10px;
+    }
+    35%{
+    left: 150px;
+    top: 65px;
+    width: 20px;
+    }
+    50%{
+    left: 200px;
+    top: 100px;
+    width: 30px;
+    }
+    65%{
+    left: 250px;
+    top: 150px;
+    width: 35px;
+    }
+    75%{
+    left: 300px;
+    top: 200px;
+    width: 40px;
+    }
+    85%{
+    left: 350px;
+    top: 250px;
+    width: 45px;
+    }
+    100%{
+    left: 400px;
+    top: 300px;
+    width: 50px;
+    }
+}
+@keyframes water1{
+    0%{
+    bottom: 0px;
+    left: 0px;
+    }
+    5%{
+    bottom: -5px;
+    left: -5px;
+    }
+    10%{
+    bottom: 0px;
+    left: 0px;
+    }
+    15%{
+    bottom: -5px;
+    left: -5px;
+    }
+    20%{
+    bottom: 0px;
+    left: 0px;
+    }
+    25%{
+    bottom: -5px;
+    left: -5px;
+    }
+    30%{
+    bottom: 0px;
+    left: 0px;
+    }
+    35%{
+    bottom: -5px;
+    left: -5px;
+    }
+    40%{
+    bottom: 0px;
+    left: 0px;
+    }
+    45%{
+    bottom: -5px;
+    left: -5px;
+    }
+    50%{
+    bottom: 0px;
+    left: 0px;
+    }
+    55%{
+    bottom: -5px;
+    left: -5px;
+    }
+    60%{
+    bottom: 0px;
+    left: 0px;
+    }
+    65%{
+    bottom: -5px;
+    left: -5px;
+    }
+    70%{
+    bottom: 0px;
+    left: 0px;
+    }
+    75%{
+    bottom: -5px;
+    left: -5px;
+    }
+    80%{
+    bottom: 0px;
+    left: 0px;
+    }
+    85%{
+    bottom: -5px;
+    left: -5px;
+    }
+    90%{
+    bottom: 0px;
+    left: 0px;
+    }
+    95%{
+    bottom: -5px;
+    left: -5px;
+    }
+    
+    100%{
+    bottom: 0px;
+    left: 0px;
+    }
+}
+@keyframes ship1{
+    0%{
+    bottom: 50px;
+    left: 10px;
+    }
+    15%{
+    bottom: 54px;
+    left: 55px;
+    }
+    25%{
+    bottom: 58px;
+    left: 100px;
+    }
+    35%{
+    bottom: 54px;
+    left: 200px;
+    }
+    50%{
+    bottom: 50px;
+    left: 300px;
+    }
+    65%{
+    bottom: 54px;
+    left: 400px;
+    }
+    75%{
+    bottom: 58px;
+    left: 500px;
+    }
+    85%{
+    bottom: 54px;
+    left: 600px;
+    }
+    100%{
+    bottom: 50px;
+    left: 700px;
+    }
+}
+
+
+@keyframes clouds1{
+    0%{
+    width: 400px;
+    right: 250px;
+    top: 30px; 
+    }
+    15%{
+    width: 390px;
+    right: 240px;
+    top: 40px;
+    }
+    25%{
+    width: 380px;
+    right: 230px;
+    top: 50px;
+    }
+    35%{
+    width: 370px;
+    right: 220px;
+    top: 60px;
+    }
+    50%{
+    width: 350px;
+    right: 210px;
+    top: 70px;
+    }
+    60%{
+    width: 325px;
+    right: 200px;
+     top: 80px;
+    }
+    75%{
+    width: 300px;
+    right: 190px;
+    top: 90px;
+    }    
+
+    88%{
+    width: 280px;
+    right: 180px;
+    top: 100px;
+    }
+    100%{
+    width: 260px;
+    right: 170px;
+    top: 120px;
+    }
+}
+
+@keyframes sun1{
+    0%{
+    width:0px;
+    top: 0px;
+    left: 0px;
+    }
+    15%{
+    width:3px;
+    top: 2px;
+    left: 40px;
+    }
+    20%{
+    width:5px;
+    top: 3px;
+    left: 45px;
+    }
+    25%{
+    width:7px;
+    top: 4px;
+    left: 50px;
+    }
+    35%{
+    width: 9px;
+    top: 5px;
+    left: 55px;
+    }
+    50%{
+    width: 11px;
+    top: 5px;
+    left: 60px;
+    }
+    60%{
+    width: 13px;
+    top: 6px;
+    left: 65px;
+    }
+    75%{
+    width: 15px;
+    top: 7px;
+    left: 70px;
+    }
+    80%{
+    width: 17px;
+    top: 8px;
+    left: 75px;
+    }
+    100%{
+    width: 19px;
+    top: 9px;
+    left: 80px;
+    }
+}
